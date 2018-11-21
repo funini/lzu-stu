@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=GBK" />
+	<title>兰州大学学生会</title>
+	<link href="/Theme/default/index.css" rel="stylesheet" type="text/css"/>
+	<script type="text/javascript" src="/js/menu.js"></script>
+	<script type="text/jscript" src="/js/tab.js"></script>
+</head>
+<body>
+	<!--top start-->
+	<div class="top">
+		<div class="top_top">
+			<ul>
+				<li><a title="兰大官网" href="http://www.lzu.edu.cn/">兰大官网</a></li>
+				<li><a title="学工网" href="http://xgb.lzu.edu.cn/WebSite/Web/Default.aspx">学工网</a></li>
+				<li><a title="教务在线" href="http://jwk.lzu.edu.cn/academic/common/security/login.jsp">教务在线</a></li>
+				<li><a title="团委" href="http://tuanwei.lzu.edu.cn/">团委</a></li>
+				<li><a title="团委微博" href="#">团委微博</a></li>
+			</ul> 
+		</div>
+		<div class="logo" style="background:url(Theme/default/logo_r1.png);">
+			<div class="left" style="	background:url(Theme/default/logo.png);"></div>
+	</div>
+	<!-- 导航 -->
+<div class="nav"> 
+  <!-- 下拉菜单 导航 -->
+<div class="menu">
+  <ul class="sub_menu">
+    <lzucms:cn.edu.lzu.cnc.tag.NavigationMenu("1","","1","","1")>>"mainmenu"/>
+ <input type="text" value="请输入关键字" style="margin-top:23px;">
+ <img src="Theme/default/search.png" style=" width: 30px; height: 30px; float: left; padding: 0px 0px 0px 190px; margin-top: -30px;"></ul>
+  <div class="clear"></div>
+  <lzucms:cn.edu.lzu.cnc.tag.NavigationMenu("1","","1","","1")>>"submenu"/>
+  
+  <!-- 下拉菜单 导航 --> 
+  </div>
+</div>
+<!-- 导航 -->
+	<div class="clear"></div>
+	<!--轮播图-->
+	<div class="cont">
+		<div class="banner_pic">
+			<lzucms:cn.edu.lzu.cnc.tag.imagetag("1200","370","100")/>
+		</div>
+	</div>
+	<div class="W1200">
+		<div class="left_item_con">
+		{lzucms:newslist boardid="4841" row="3" titlelen="25" abstractlen='' subtitlelen="" bodylen="" newstype="2"}
+			<div class="left_item">
+				<a href="[field:link/]">
+					<img src="[field:imgpath/]">
+					<div class="item_title">[field:title/]</div>
+					<span>[field:title/]</span>					
+				</a>
+			</div>
+			{/lzucms:newslist}
+		</div>
+		<div class="clearit"></div>
+		<!--第二梯队右侧-->
+		<div class="notice_wrap">
+			<table class="notice right_2">
+				<table class="notic_top">
+					<tbody>
+						<tr>
+							<td>通知公告</td>
+						</tr>
+					</tbody>
+				</table>
+			{lzucms:newslist boardid="4833" row="3" titlelen="25" abstractlen='' subtitlelen="" bodylen="" newstype=""}
+			<table class="notice_con right_3">
+					<tbody>
+						<tr>
+							<td class="notice_time_con">
+								<table class="notice_time_l">
+									<tbody>
+										<tr>
+											<td class="dian_liest_rq_y_1">[field:year/]-[field:month/]</td>
+										</tr>
+										<tr>
+											<td class="dian_liest_rq_y_2">[field:day/]</td>
+										</tr>
+									</tbody>
+								</table>
+							</td>
+							<td class="notice_list right_1">
+								<a href="[field:link/]" target="_blank" title="[field:title/]">[field:title/]</a>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				{/lzucms:newslist}
+			</table>
+		</div>
+	</div>
+	<div class="main">
+		<div class="noice">
+			<div class="tab">
+				<ul>
+					<li id="one1" onmouseover="setTab('one',1,3)">
+						<p><a class="tab_list icon1" href="#">活动预告</a></p>
+					</li>
+					<li id="one2" onmouseover="setTab('one',2,3)">
+						<p><a class="tab_list icon2" href="#">学员风采</a></p>
+					</li>
+					<li id="one3" onmouseover="setTab('one',3,3)">
+						<p><a class="tab_list icon3" href="#">制度建设</a></p>
+					</li>
+				</ul>
+			</div>
+			<div class="tabBox" id="con_one_1">
+				<ul>
+				{lzucms:newslist boardid="4833" row="6" titlelen="30" abstractlen='' subtitlelen="" bodylen="" newstype=""}
+					<li>
+						<span class="tabBox_l_time_yy">[field:year/]-[field:month/]</span>
+						<span class="tabBox_l_time_d">[field:day/]</span>
+						<a title="[field:title/]" href="[field:link/]">[field:title/]</a>
+					</li>
+					{/lzucms:newslist}
+				</ul>
+				<div>
+						<a class="more" href="{lzucms:attr attr="boardlink" boardid="6340"/}">更多>></a>
+				</div>
+			</div>
+			<div class="tabBox" id="con_one_2" style="display:none;">
+				<ul>
+				{lzucms:newslist boardid="6341" row="6" titlelen="30" abstractlen='' subtitlelen="" bodylen="" newstype=""}
+					<li>
+						<span class="tabBox_l_time_yy">[field:year/]-[field:month/]</span>
+						<span class="tabBox_l_time_d">[field:day/]</span>
+						<a title="[field:title/]" href="[field:link/]">[field:title/]</a>
+					</li>
+					{/lzucms:newslist}
+				</ul>
+				<div>
+						<a class="more" href="{lzucms:attr attr="boardlink" boardid="6341"/}">更多>></a>
+				</div>
+			</div>
+			<div class="tabBox" id="con_one_3" style="display:none;">
+				<ul>
+				{lzucms:newslist boardid="6342" row="6" titlelen="30" abstractlen='' subtitlelen="" bodylen="" newstype=""}
+					<li>
+						<span class="tabBox_l_time_yy">[field:year/]-[field:month/]</span>
+						<span class="tabBox_l_time_d">[field:day/]</span>
+						<a title="[field:title/]" href="[field:link/]">[field:title/]</a>
+					</li>
+					{/lzucms:newslist}
+				</ul>
+				<div>
+					<a class="more" href="{lzucms:attr attr="boardlink" boardid="6342"/}">更多>></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="footer_con">
+			<div class="footer_left">
+				<ul>
+					<li><a class="footer_l_1" href="#"><img src="Theme/default/shenshensf.png">莘莘时风</a></li>
+					<li><a class="footer_l_1" href="#"><img src="Theme/default/wailianhz.png">外联合作</a></li>
+					<li><a class="footer_l_1" href="#"><img src="Theme/default/youqinglj.png">友情链接</a></li>
+					<li><a class="footer_l_1" href="#"><img src="Theme/default/cuiyingxy.png">萃英校影</a></li>
+				</ul>
+			</div>
+			<div class="footer_right">
+				<ul>
+					<li><a class="footer_r_1"><img src="Theme/default/weibo.jpg" />学生会官方微博</a></li>
+					<li><a class="footer_r_1"><img src="Theme/default/qq.jpg" />学生会官方QQ</a></li>
+					<li><a class="footer_r_1"><img src="Theme/default/weixin.jpg" />学生会官方微信</a></li>
+				</ul>
+			</div>
+			<div class="clear"></div>
+			<div class="email" >
+				<span>Email:lzuxshh@163.com</span>
+				<span>版权@兰州大学学生会</span>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<body>
+<!-- header begin -->
+<!-- 导航 -->
+<div class="nav"> 
+  <!-- 下拉菜单 导航 -->
+  <ul class="sub_menu">
+    <lzucms:cn.edu.lzu.cnc.tag.NavigationMenu("1","","1","","1")>>"mainmenu"/>
+  </ul>
+  <lzucms:cn.edu.lzu.cnc.tag.NavigationMenu("1","","1","","1")>>"submenu"/>
+  <!-- 下拉菜单 导航 --> 
+  
+</div>
+<!-- 导航 -->
+<div class="clear"></div>
+<!-- header begin -->
+<div class="header">
+  <div class="time">
+    <div class="search">
+      <form name="form">
+        <input type="text" value="">
+        <input type="submit" value="" class="btnSearch">
+      </form>
+      <div class="clear"></div>
+    </div>
+    欢迎光临兰州大学学生会！今天是:<span style="font-size:16px;color:#000000"> <script>
+var mydate=new Date()
+var year=mydate.getYear()
+if (year < 1000)
+year+=1900
+var day=mydate.getDay()
+var month=mydate.getMonth()
+var daym=mydate.getDate()
+if (daym<10)
+daym="0"+daym
+var dayarray=new Array("星期天","星期一","星期二","星期三","星期四","星期五","星期六")
+var montharray=new Array("1","2","3","4","5","6","7","8","9","10","11","12")
+document.write(+year+"年"+montharray[month]+"月"+daym+"日"+"，"+dayarray[day])
+</script>
+  </div>
+</div>
+<!-- header end -->
+<div class="sub_containor" style="background:none;">
+<div id="position">   
+     <a href="http://su.lzu.edu.cn/index.html">网站首页</a> > <lzucms:cn.edu.lzu.cnc.tag.News("0")>>"position"/> > 正 文 </div>
+    <div class="clear"></div>
+ 
+    <div class="content">
+     
+     <div id="content">
+        <lzucms:cn.edu.lzu.cnc.tag.News("0")>>"content"/>
+		 <lzucms:cn.edu.lzu.cnc.tag.News("0")>>"accessory"/>
+      </div>
+    </div>
+     <div class="page"><img src="/Theme/default/B_print.gif" onclick="window.print()" /> <img src="/Theme/default/B_close.gif"  onclick="javascript:self.close()" /> <img src="/Theme/default/B_top.gif" onclick="location.href='#'" /></div>
+   
+  
+</div>
+
+<!-- footer begin -->
+<div class="footer">
+  <p>Copyright (C) 兰州大学法学院  All rights reserved.<br />
+    办公地址：兰州大学医学校区明道楼二楼   联系电话：0931-8913730  邮编：730000</p>
+</div>
+<!-- footer end -->
+</body>
+</html>
+
